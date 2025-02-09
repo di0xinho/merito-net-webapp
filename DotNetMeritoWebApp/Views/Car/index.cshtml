@@ -1,0 +1,19 @@
+@model List<CarViewModel>
+@{
+    ViewData["Title"] = "Car Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Car Page</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    @foreach(var car in Model){
+        <div>
+            <div>
+               <div> Name: @car.Name</div>
+                <div>Brand: @car.Brand</div>
+                <div>Color: @car.Color</div>
+            </div>
+        </div>
+    }
+</div>
